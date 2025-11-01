@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>GodestMC</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<header class="bg-white shadow">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="text-2xl font-bold">GodestMC</div>
+      <nav class="hidden md:flex gap-3 text-sm" id="navLinks">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="about.html" class="nav-link">Sobre Nosotros</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="tos.html" class="nav-link">ToS</a>
+        <a href="privacy.html" class="nav-link">Políticas</a>
+        <a href="contact.html" class="nav-link">Contacto</a>
+        <a href="https://tienda.godestmc.website/" target="_blank" class="nav-link">Tienda</a>
+      </nav>
+    </div>
+    <button id="menuBtn" class="md:hidden p-2 rounded bg-gray-100">☰</button>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto p-4" id="app">
+<section class="bg-white rounded p-6 shadow">
+      <h1 class="text-3xl font-bold mb-2">GodestMC</h1>
+      <p class="text-gray-600 mb-4">Servidor Minecraft - Rendimiento, comunidad y seguridad.</p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <div class="p-4 border rounded flex-1">
+          <h3 class="font-semibold">Java</h3>
+          <div class="mt-2 flex items-center justify-between">
+            <div><code id="javaIP">mc.godestmc.xyz</code></div>
+            <div class="flex gap-2">
+              <button id="copyJava" class="px-3 py-1 bg-indigo-600 text-white rounded">Copiar IP</button>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 border rounded flex-1">
+          <h3 class="font-semibold">Bedrock</h3>
+          <div class="mt-2 flex items-center justify-between">
+            <div><code id="bedrockIP">bedrock.godestmc.xyz</code></div>
+            <div class="flex gap-2">
+              <button id="copyBed" class="px-3 py-1 bg-indigo-600 text-white rounded">Copiar IP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+<footer class="mt-12 bg-white border-t">
+  <div class="max-w-6xl mx-auto p-4 text-sm text-gray-600">
+    © GodestMC
+  </div>
+</footer>
+<div id="toaster" class="fixed top-6 right-6 space-y-2 z-50"></div>
+<script src="./script.js"></script>
+</body>
+</html>
